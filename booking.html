@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">WE School</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container form-page">
+    <h2>Booking Form</h2>
+    <form>
+      <label>Name</label>
+      <input type="text" required />
+
+      <label>Email</label>
+      <input type="email" required />
+
+      <label>Phone</label>
+      <input type="number" required />
+
+      <label>Arrival Date</label>
+      <input type="date" required />
+
+      <label>Departure Date</label>
+      <input type="date" required />
+
+      <label>Room Type</label>
+      <select required>
+        <option value="">-- Select Room --</option>
+        <option>Single</option>
+        <option>Double</option>
+        <option>Suite</option>
+      </select>
+
+      <fieldset>
+        <legend>Services</legend>
+        <label><input type="checkbox" /> Breakfast</label>
+        <label><input type="checkbox" /> Free Wi-Fi</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment</legend>
+        <label><input type="radio" name="pay" required /> Cash</label>
+        <label><input type="radio" name="pay" required /> Card</label>
+      </fieldset>
+
+      <label>Upload ID</label>
+      <input type="file" required />
+
+      <label>Notes</label>
+      <textarea></textarea>
+
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+  </main>
+</body>
+</html>
